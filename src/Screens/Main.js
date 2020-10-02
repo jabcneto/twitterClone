@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dimensions, StatusBar, StyleSheet, View} from 'react-native';
+import {Dimensions, Image, StatusBar, StyleSheet, View} from 'react-native';
 import {
   ScrollView,
   TouchableHighlight,

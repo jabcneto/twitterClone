@@ -8,7 +8,7 @@ export default ({nome, arroba, tempo, imgUrl}) => {
     <View style={styles.container}>
       <View style={styles.containerNome}>
         <Image
-          style={styles.logo}
+          style={styles.icon}
           source={{
             uri:
               'https://s3.amazonaws.com/uifaces/faces/twitter/supjoey/128.jpg',
@@ -39,25 +39,53 @@ export default ({nome, arroba, tempo, imgUrl}) => {
             </View>
           </View>
           <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
-            <Icon
-              name="comment"
-              size={20}
-              color="#a8a4a3"
-              style={{margin: 10}}
-            />
-            <Icon
-              name="retweet"
-              size={20}
-              color="#a8a4a3"
-              style={{margin: 10}}
-            />
-            <Icon name="heart" size={20} color="#a8a4a3" style={{margin: 10}} />
-            <Icon
-              name="share-alt"
-              size={20}
-              color="#a8a4a3"
-              style={{margin: 10}}
-            />
+            <View style={{flexDirection: 'row'}}>
+              <Icon
+                name="comment"
+                size={20}
+                color="#a8a4a3"
+                style={{margin: 10}}
+              />
+              <Text
+                style={{
+                  color: '#fefefe',
+                  textAlignVertical: 'center',
+                }}>
+                32
+              </Text>
+            </View>
+
+            <View style={{flexDirection: 'row'}}>
+              <Icon
+                name="retweet"
+                size={20}
+                color="#a8a4a3"
+                style={{margin: 10}}
+              />
+              <Text style={{color: '#fefefe', textAlignVertical: 'center'}}>
+                32
+              </Text>
+            </View>
+
+            <View style={{flexDirection: 'row'}}>
+              <Icon
+                name="heart"
+                size={20}
+                color="#a8a4a3"
+                style={{margin: 10}}
+              />
+              <Text style={{color: '#fefefe', textAlignVertical: 'center'}}>
+                32
+              </Text>
+            </View>
+            <View style={{flexDirection: 'row'}}>
+              <Icon
+                name="share-alt"
+                size={20}
+                color="#a8a4a3"
+                style={{margin: 10}}
+              />
+            </View>
           </View>
         </View>
       </View>
@@ -70,12 +98,12 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 10,
     borderColor: '#25313B',
-    borderWidth: 0.25,
+    borderWidth: 1.45,
   },
   containerNome: {
     flexDirection: 'row',
   },
-  logo: {
+  icon: {
     marginRight: 15,
     borderRadius: 100,
     width: 55,
