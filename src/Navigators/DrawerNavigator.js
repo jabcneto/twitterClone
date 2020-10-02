@@ -10,7 +10,7 @@ export default function () {
   return (
     <Drawer.Navigator
       drawerStyle={{backgroundColor: '#15202B'}}
-      initialRouteName="Login">
+      initialRouteName="Main">
       <Drawer.Screen name="Login" component={Login} />
       <Drawer.Screen name="Main" component={Main} />
     </Drawer.Navigator>
